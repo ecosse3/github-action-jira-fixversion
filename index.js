@@ -19,6 +19,7 @@ let jira, domain, username, password, versionName, versionDescription, versionAr
             host: domain,
             username: username,
             password: password,
+            apiVersion: '2',
         });
         //core.setFailed(`version is not correct: [${version}] must be "1.0.0"/"v1.0.0"/"test 1.0.0" pattern`);
         createAndSetVersion(issueKeys, versionName, versionDescription, versionArchived, versionReleased)
